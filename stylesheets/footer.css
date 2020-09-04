@@ -77,3 +77,13 @@
     }
 }
 
+.attribution {
+    color: hsl(233, 8%, 62%);
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a{
+    color: #fff;
+}
+
