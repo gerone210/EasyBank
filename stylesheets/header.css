@@ -1,0 +1,153 @@
+.header {
+    background-color: #fff;
+    line-height: 75px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* header left */
+#header-left {
+    width: 25%;
+    text-align: left;
+}
+
+#header-left img{
+    cursor: pointer;
+}
+
+
+/* header center */
+
+#header-center {
+    width: 50%;
+    text-align: center;
+}
+
+#header-center ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+#header-center ul li {
+    display: inline;
+    padding: 25px 15px 24px 15px;
+}
+
+#header-center ul li:hover {
+    color: hsl(233, 26%, 24%);
+    cursor: pointer;
+    /* border-bottom: 5px solid greenyellow; */
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    
+}
+
+/* header right */
+
+#header-right {
+    width: 25%;  
+    text-align: right;
+}
+
+.request {
+    font-family: 'Public Sans', sans-serif;
+    padding: 13px 32px;
+    border-radius:25px;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%) , hsl(192, 70%, 51%));;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.request:hover {
+    opacity: 70%;
+}
+
+/* header mobile */
+.header-mobile {
+    display: none;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.header-mobile-content {
+    line-height: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#hamburger {
+    position: absolute;
+    right: 9%;
+    top: 25px;
+}
+
+#close {
+    display: none;
+    position: absolute;
+    right: 9%;
+    top: 25px;
+}
+#header-menu {
+    display: none;
+    position: fixed;
+    width: 90%;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-box-shadow: 0px 53px 50px 80px rgba(45, 49, 77, 0.75);
+    -moz-box-shadow:    0px 53px 80px 50px rgba(45, 49, 77, 0.75);
+    box-shadow:         0px 53px 80px 50px rgba(45, 49, 77, 0.75);
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+}
+
+#header-content {
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+#header-menu ul {
+    list-style-type:none;
+    color: hsl(233, 26%, 24%);
+    padding-left: 0;
+    margin: 0;
+    line-height: 40px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+
+
+
+
+
+
+@media screen and (max-width: 812px) {
+    .header {
+        display: none;
+    }
+
+    .header-mobile {
+        display: block;
+    }
+
+}

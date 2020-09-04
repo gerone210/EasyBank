@@ -1,0 +1,23 @@
+body {
+    font-family: 'Public Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    color: hsl(233, 8%, 62%);
+    overflow-x: hidden;
+}
+
+.content-row{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+
+
+
+
+
